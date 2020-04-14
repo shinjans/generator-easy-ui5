@@ -1,0 +1,34 @@
+<mvc:View
+	controllerName="<%= fullNamespace  %>.controller.Main"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic">
+
+	<semantic:SemanticPage
+		id="page"
+		headerPinnable="false"
+		toggleHeaderOnTitleClick="false"
+		showFooter="{=${message>/}.length > 0}">
+
+		<semantic:titleHeading>
+			<Title
+				text="{i18n>mainTitle}"
+				level="H2"/>
+		</semantic:titleHeading>
+
+		<semantic:content>
+            <Text text="add content here" />
+		</semantic:content>
+
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+
+
+		<semantic:messagesIndicator>
+			<semantic:MessagesIndicator press="onMessagePopoverPress" visible="{=${message>/}.length > 0}" text="{=${message>/}.length}"/>
+		</semantic:messagesIndicator>
+
+	</semantic:SemanticPage>
+
+</mvc:View>

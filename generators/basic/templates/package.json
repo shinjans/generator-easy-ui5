@@ -1,0 +1,38 @@
+{
+  "name": "<%= fullNamespace  %>",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "deploy": "ui5 build --include-task=generateManifestBundle generateCachebusterInfo",
+    "startflp": "ui5 serve --open Launchpad.html",
+    "start": "ui5 serve -o index.html",
+    "serve": "ui5 serve",
+    "lint": "eslint webapp"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^2.0.2",
+    "eslint": "^6.8.0",
+    "@ui5/uiveri5": "*",
+    "ui5-task-nwabap-deployer": "*",
+    "ui5-middleware-simpleproxy": "*",
+    "ui5-middleware-proxy-basicauth": "*"
+  },
+  "ui5": {
+    "dependencies": [
+      "@ui5/cli",
+      "eslint",
+      "@ui5/uiveri5",
+      "ui5-task-nwabap-deployer",
+      "ui5-middleware-simpleproxy",
+      "ui5-middleware-proxy-basicauth"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git + https://"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "?",
+  "private": true
+}

@@ -9,7 +9,16 @@
     "newview",
     "newcontrol",
     "newcomponentusage",
-    "newmodel"
+    "newmodel",
+    "basic",
+    "e-analytical",
+    "e-listreport",
+    "e-ovp",
+    "e-worklist",
+    "masterdetail",
+    "plugin",
+    "worklist",
+    "router"
   ],
   "scripts": {
     "test": "mocha",
@@ -27,6 +36,7 @@
     "sapcloudplatform",
     "cloudplatform",
     "generator",
+    "ui5-tooling",
     "scaffold"
   ],
   "author": "SAP",

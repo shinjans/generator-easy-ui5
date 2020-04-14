@@ -39,6 +39,16 @@ module.exports = class extends Generator {
     this.options.oneTimeConfig = this.config.getAll();
     this.options.oneTimeConfig.fullNamespace = this.options.oneTimeConfig.namespace + "." + this.options.oneTimeConfig.projectname;
     this.options.oneTimeConfig.namespacePath = this.options.oneTimeConfig.namespace + "/" + this.options.oneTimeConfig.projectname;
+    if (!this.options.oneTimeConfig.OdataServer)
+      this.options.oneTimeConfig.ODataServer = "";
+    if (!this.options.oneTimeConfig.serverClient)
+      this.options.oneTimeConfig.serverClient = "";
+    if (!this.options.oneTimeConfig.userID)
+      this.options.oneTimeConfig.userID = "";
+    if (!this.options.oneTimeConfig.password)
+      this.options.oneTimeConfig.password = "";
+    if (!this.options.oneTimeConfig.ODataServiceURL)
+      this.options.oneTimeConfig.ODataServiceURL = "";
 
     glob.sync("**", {
       cwd: this.sourceRoot(),

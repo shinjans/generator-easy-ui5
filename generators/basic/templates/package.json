@@ -1,5 +1,5 @@
 {
-  "name": "<%= fullNamespace  %>",
+  "name": "<%= fullNamespace %>",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -19,11 +19,8 @@
   },
   "ui5": {
     "dependencies": [
-      "@ui5/cli",
-      "eslint",
-      "@ui5/uiveri5",
-      "ui5-task-nwabap-deployer",
       "ui5-middleware-simpleproxy",
+      "ui5-task-nwabap-deployer",
       "ui5-middleware-proxy-basicauth"
     ]
   },
